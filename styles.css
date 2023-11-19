@@ -18,6 +18,11 @@ header {
     top: 0;
 }
 
+header h1 {
+    color: #D49A89;
+    margin-left: 30px;
+}
+
 .navlinks {
     display: flex;
     height: 69px;
@@ -38,6 +43,38 @@ header {
 .navlinks a:hover {
     text-decoration: underline;
     color: #F4F4F4;
+}
+
+
+/* summary styles */
+#summary {
+    margin: 2em auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#summary h2, #meets h2 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 20px;
+    display: flex;
+}
+
+#summary p {
+    font-size: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#testemonial {
+    background-color: #F7D1BA;
+    height: 64px;
+    width: 100%;
+    margin: .75rem;
+    padding: 1rem;
+    display: flex;
 }
 
 /* image styles */
@@ -64,39 +101,6 @@ header {
     margin: 4em auto;
     align-items: center;
     flex-flow: row;
-}
-
-
-/* summary styles */
-#summary {
-    margin: 2em auto;
-    padding: 0 1rem;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-#summary h2, #meets h2 {
-    font-family: 'Rock Salt', cursive;
-    font-size: 20px;
-    display: flex;
-
-}
-
-#summary p {
-    font-size: 20px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-#testemonial {
-    background-color: #F7D1BA;
-    height: 64px;
-    width: 100%;
-    margin: .75rem;
-    padding: 1rem;
-    display: flex;
 }
 
 /* meet up styles */
@@ -133,3 +137,44 @@ footer {
 footer p {
     margin: 1em 2em;
 }
+
+/* media wueries */
+@media only screen and (max-width: 1048px) {
+    .image img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    header h1, nav, .navlinks {
+      margin-top: 2rem;
+    }
+  
+    #summary {
+      max-height: 200px;
+    }
+  
+    .image img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    li {
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    #testimonial h3 {
+      font-size: 2rem;
+    }
+  
+    .image img {
+      width: 100%;
+    }
+  }
+  
